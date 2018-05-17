@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Delete Venues</title>
+  </head>
+  <body>
+    <h1>Deleted Venues</h1>
+    <form action="/venues/delete" method="post">
+      <select id="DeleteAllVenues" name="DeleteAllVenues">
+        @foreach(var Venue in Model)
+      </select>
+      <button type="submit">Delete All Venues</button>
+    </form>
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
