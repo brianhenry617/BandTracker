@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Venue</title>
+  </head>
+  <body>
+    <h1>About this Venue</h1>
+    <p>Venue Name @Model["venuesName"].GetVenuesName()</p>
+    <p>Bands that have played here</p>
+    <ul>
+      @foreach (Bands in @Model["bandVenues"])
+      {
+        <li>@bands.GetBandName()</li>
+      }
+    </ul>
+    <p><a href="/">Home</a></p>
+  </body>
+</html>
