@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Delete Bands</title>
+  </head>
+  <body>
+    <h1>Deleted Bands</h1>
+    <form action="/bands/delete" method="post">
+      <select id="DeleteAllBands" name="DeleteAllBands">
+        @foreach(var Band in Model)
+      </select>
+      <button type="submit">Delete All Bands</button>
+    </form>
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
